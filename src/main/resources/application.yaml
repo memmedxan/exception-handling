@@ -1,1 +1,18 @@
+spring.jpa:
+  database: POSTGRESQL
+  hibernate.ddl-auto: create-drop
+  show-sql: true
 
+server:
+  port : 8081
+
+
+spring.datasource:
+  driverClassName: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/postgres
+  username: postgres
+  password: xan
+spring:
+  sql:
+    init:
+      platform: postgres
